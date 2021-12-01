@@ -33,11 +33,11 @@ h1 {
   stroke-linecap: round;
 }
 
-.figure-part {
+.figure-parts {
   display: none;
 }
 
-.wrong-letters-containter {
+.wrong-letters-container {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -46,11 +46,11 @@ h1 {
   text-align: right;
 }
 
-.wrong-letters-containter p {
+.wrong-letters-container p {
   margin: 0 0 5px;
 }
 
-.wrong-letters-containter span {
+.wrong-letters-container span {
   font-size: 24px;
 }
 
@@ -75,12 +75,12 @@ h1 {
 
 .popup-container {
   background-color: rgba(0, 0, 0, 0.3);
-  position:  fixed;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  display: flex;
+  /* display: flex; */
   display: none;
   align-items: center;
   justify-content: center;
@@ -118,7 +118,9 @@ h1 {
   padding: 15px 20px;
   position: absolute;
   bottom: -50px;
+  transition: transform 0.3s ease-in-out;
 }
+
 .notification-container p {
   margin: 0;
 }
